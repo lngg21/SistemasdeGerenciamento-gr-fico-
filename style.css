@@ -1,0 +1,114 @@
+body {
+    background-color: #7d677e;
+    font-family: 'Poppins', sans-serif;
+    color: #333; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    color: #4f2c4d;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap; /* Adicione esta propriedade */
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #ccc9aa;
+    color: #fafdea;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    width: 100%; /* Defina a largura como 100% */
+}
+
+.left-panel {
+    padding-top: 50px;
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #360b41; 
+}
+
+button {
+    border-radius: 5px;
+    color: #fff; 
+    background-color: #360b41; 
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    color: #4f2c4d;
+    font-weight: bold;
+}
+
+select, input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.nav {
+    list-style: none;
+    color: #fff;
+    align-items: center;
+    padding-bottom: 35px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #360b41;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: #360b41;
+}
+
+.navbar a:hover::after {
+    background-color: #360b41;
+}
+
+.footer {
+    background-color: #360b41;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+

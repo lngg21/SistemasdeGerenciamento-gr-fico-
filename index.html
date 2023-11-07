@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Gerenciador de Contas Bancárias</title>
+</head>
+<body>
+    <header class="header"></header>
+    <nav class="nav">
+            </nav>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Gerenciador de Contas Bancárias</h1>
+            <div>
+                <h2>Inserir Conta</h2>
+                <label for="agencia">Agência:</label>
+                <input type="text" id="agencia"><br>
+                <br>
+                <label for="numero">Número da Conta:</label>
+                <input type="text" id="numero"><br>
+                <br>
+                <label for="tipo">Tipo de Conta:</label>
+                <select id="tipo">
+                    <option value="Corrente">Conta Corrente</option>
+                    <option value="Poupanca">Conta Poupança</option>
+                    <option value="Universitaria">Conta Universitária</option>
+                </select><br>
+                <br>
+                <label for="saldo">Saldo:</label>
+                <input type="text" id="saldo">
+                <button onclick="inserirConta()">Inserir</button>
+            </div>
+            <div>
+                <h2>Extrato</h2>
+                <button onclick="visualizarContas()">Visualizar</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>Extrato</h2>
+            <ul id="listaContas"></ul>
+            <canvas id="graficoBarras" width="200" height="200"></canvas>
+            <canvas id="graficoPizza" width="200" height="200"></canvas>
+            <canvas id="graficoLinhas" width="200" height="200"></canvas>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Arthur Vinicius
+    </div>
+</body>
+</html>
